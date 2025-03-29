@@ -41,5 +41,7 @@ jobs:
         kubectl apply -f deployment.yaml -n nodejs-env
         kubectl apply -f svc.yaml -n nodejs-env
         kubectl apply -f ingress.yaml -n nodejs-env
+        kubectl get ns
+        kubectl get svc,ing -n nodejs-env
 
 
